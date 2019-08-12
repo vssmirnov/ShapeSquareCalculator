@@ -4,7 +4,7 @@ namespace Calculator.Calculators
 {
     internal class NullCalculator : ICalculator
     {
-        public long Calculate(IShapeParameter paramters)
+        public double Calculate(IShapeParameter paramters)
         {
             throw new System.NotImplementedException();
         }

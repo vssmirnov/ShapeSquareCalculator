@@ -10,6 +10,6 @@ namespace Calculator.Calculators
         /// <summary>
         /// Расчитать площадь фигуры по параметрам
         /// </summary>
-        long Calculate(IShapeParameter paramters);
+        double Calculate(IShapeParameter paramters);
     }
 }

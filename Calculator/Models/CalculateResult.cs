@@ -8,7 +8,7 @@ namespace Calculator.Models
         /// <summary>
         /// Площадь фигуры
         /// </summary>
-        public long Result { get; set; } 
+        public double Result { get; set; } 
 
         /// <summary>
         /// Флаг успешности вычесления, true - успешно, false - произошла ошибка

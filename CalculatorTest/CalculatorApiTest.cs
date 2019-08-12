@@ -21,7 +21,7 @@ namespace CalculatorTest
         {
             var api = new Calculator.CalculatorApi(); 
             var result = api.CalculateShapeSquare<SquareParameter>(new SquareParameter(){Radius = 4});
-            Assert.AreEqual(result.Result, 25.12);
+            Assert.AreEqual(result.Result, 25,1327412287183);
         }
         
         [TestMethod]

@@ -1,12 +1,17 @@
+using System;
 using Calculator.Models;
 
 namespace Calculator.Calculators
 {
     internal class TriangleCalculator : ICalculator
     {
-        public long Calculate(IShapeParameter paramters)
+        public double Calculate(IShapeParameter paramters)
         {
-            throw new System.NotImplementedException();
+            var triangle = paramters as TriangleParameter;
+
+            var p = (triangle.SideA + triangle.SideB + triangle.SideC) / 2;
+ 
+            return Math.Sqrt(p * (p - triangle.SideA) * (p - triangle.SideB) * (p - triangle.SideC));
         }
     }
 }

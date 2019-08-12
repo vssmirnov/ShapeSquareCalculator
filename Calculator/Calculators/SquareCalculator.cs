@@ -1,12 +1,14 @@
+using System;
 using Calculator.Models;
 
 namespace Calculator.Calculators
 {
     internal class SquareCalculator : ICalculator
     {
-        public long Calculate(IShapeParameter paramters)
+        public double Calculate(IShapeParameter paramters)
         {
-            throw new System.NotImplementedException();
+            var square = paramters as SquareParameter;
+            return square.Radius * 2.0 * Math.PI;
         }
     }
 }

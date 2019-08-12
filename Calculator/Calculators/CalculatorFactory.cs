@@ -19,7 +19,7 @@ namespace Calculator.Calculators
         private void InitDefaultCalculators()
         {            
             AddCalculator(typeof(TriangleParameter), new TriangleCalculator());
-            AddCalculator(typeof(SquareParameter), new TriangleCalculator());
+            AddCalculator(typeof(SquareParameter), new SquareCalculator());
         }
 
         public void AddCalculator<T>(Type typeShape, T calculator) where T: ICalculator
