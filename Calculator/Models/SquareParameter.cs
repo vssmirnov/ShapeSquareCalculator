@@ -3,7 +3,7 @@ namespace Calculator.Models
     /// <summary>
     /// Параметры круга
     /// </summary>
-    public class SquareParameter: IShapeParameter
+    public sealed class SquareParameter: IShapeParameter
     {
         /// <summary>
         /// Радиус

@@ -21,6 +21,10 @@ namespace Calculator
         /// </summary>
         public CalculatingResult CalculateShapeSquare<T>(T parameterSquare) where T: IShapeParameter
         {
+            if (parameterSquare == null) {
+                return new CalculatingResult(){IsSuccess = false, ErrorMessage = "Передан параметр со значением null"};
+            }
+
             var calculator = CalculatorFactory.Singlton.GetCalculator(parameterSquare.GetType());
             if (calculator.GetType() == typeof(NullCalculator)){
                 return new CalculatingResult(){IsSuccess = false, ErrorMessage = "Не найден калькулятор для заданной фигуры"};

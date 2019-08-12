@@ -8,7 +8,7 @@ namespace Calculator.Calculators
     public interface ICalculator
     {
         /// <summary>
-        /// Расчитать площадь
+        /// Расчитать площадь фигуры по параметрам
         /// </summary>
         long Calculate(IShapeParameter paramters);
     }
