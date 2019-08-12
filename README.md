@@ -1,0 +1,2 @@
+# ShapeSquareCalculator
+Shape square calculator
